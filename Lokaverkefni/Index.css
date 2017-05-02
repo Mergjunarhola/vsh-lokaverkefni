@@ -1,0 +1,55 @@
+.headtext {
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  font-size: 4em; }
+
+.bott {
+  position: absolute;
+  left: 45%;
+  top: 60%;
+  font-size: 2em; }
+
+.bottbox {
+  width: 100;
+  background-color: aqua; }
+
+/*
+
+##############
+    Navbar
+##############
+
+*/
+.navigation {
+  position: fixed;
+  width: 98%;
+  list-style: none;
+  margin: -0.5em;
+  background: rgba(0, 29, 255, 0.59);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.navigation a {
+  text-decoration: none;
+  border-left: rgba(255, 188, 0, 0.5) 1px solid;
+  display: block;
+  color: rgba(248, 183, 0, 0.81); }
+
+.navigation a:hover {
+  background: #c600f5; }
+
+.navigation a {
+  text-align: center;
+  padding: 10px; }
+
+.navigation li:last-of-type a {
+  border-bottom: none; }
