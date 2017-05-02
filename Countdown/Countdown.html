@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Countdown</title>
+</head>
+<body>
+	<h1 id="Cout">Andar Skítur</h1>
+    <script type="text/javascript">
+        var nuna = new Date();
+        var time_length = 200;
+        var target = new Date(11111111111)
+        var hold = 0;
+        var temphold = 0;
+        
+        
+        
+        function Countdown()
+		{
+ 			document.getElementById("Cout").innerHTML = hold;
+            nuna = Date();
+            hold = Number(nuna.getDate());
+            window.setTimeout("Countdown()",time_length);
+		}
+        Countdown();
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+</body>
+</html>
