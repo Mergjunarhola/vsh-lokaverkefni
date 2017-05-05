@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  position: relative;
+  width: 100%; }
+
+.headtext {
+  text-align: center;
+  position: relative;
+  top: 5%;
+  font-size: 4em;
+  text-align: center; }
+
+.tables {
+  width: 60em;
+  margin: 0 auto;
+  border-bottom: black  2em; }
+
+.tableborder {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid; }
+
+.klasi {
+  border-bottom: 1px black solid; }
+
+.klasi2 {
+  border-right: 1px black solid; }
+
+/*
+
+##############
+    Navbar
+##############
+
+*/
+.navigation {
+  position: fixed;
+  width: 98%;
+  list-style: none;
+  margin: 0;
+  background: rgba(0, 29, 255, 0.59);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  justify-content: flex-end; }
+
+/*.navigation a {
+  text-decoration: none;
+  border-left: rgba(255, 188, 0, 0.5) 1px solid;
+  display: block;
+  color: rgba(248, 183, 0, 0.81);
+}
+*/
+.navigation a:hover {
+  background: #c600f5; }
+
+.navigation a {
+  text-align: center;
+  padding: 10px; }
+
+.navigation li:last-of-type a {
+  border-bottom: none; }
+
+.col1-2 {
+  width: 45%;
+  height: 20%;
+  border: solid 1px;
+  margin-left: 100px; }
+
+.text {
+  width: 50%;
+  height: 20%; }
+
+img {
+  width: 45%;
+  height: 100%; }
+
+a {
+  padding: 4px;
+  text-align: center;
+  margin-top: -4px; }
