@@ -3,30 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<title>Countdown</title>
+    <link rel="stylesheet" href="Countdown_Style.css">
 </head>
 <body>
-	<h1 id="Cout">Andar Skítur</h1>
-    <script type="text/javascript">
-        var nuna = new Date();
-        var time_length = 200;
-        var target = new Date(11111111111)
-        var hold = 0;
-        var temphold = 0;
-        
-        
-        
-        function Countdown()
-		{
- 			document.getElementById("Cout").innerHTML = hold;
-            nuna = Date();
-            hold = Number(nuna.getDate());
-            window.setTimeout("Countdown()",time_length);
-		}
-        Countdown();
+    <section class="timecontainer">
+        <div class="timebox">
+            <section class="rowtime">
+                <div class="infotime"><p>Dagar</p></div>
+                <p id="Dagarstat">hæ</p>
+            </section>
+        </div>
+        <p class="middlepoint">:</p>
+    </section>
     
-    
-    
-    </script>
+    <script src="Count.js" type="text/javascript"></script>
     
     
     
