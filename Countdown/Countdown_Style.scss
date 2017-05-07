@@ -1,35 +1,38 @@
-#Cout{
+*{
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
-.panspan{
-    width: 100px;
+
+body{
+    width: 60em;
 }
 
+
+
 .timecontainer{
-    display: flex;
+    display: inline-flex;
     flex-flow: row;
-    border: solid 2px red;
-    padding: 3px;
-    width: 40em;
     height: 5em;
+    width: auto;
 }
 
 .timebox{
     display: flex;
     flex-basis: 5em;
     background-color: cornflowerblue;
+    border-radius: 5px;
     
 }
 
 .infotime{
     font-size: 0.8em;
+    text-align: center;
+    margin-top: 0em;
+    padding: 0.2em;
     
 }
 
 .rowtime{
-    margin-left: auto;
-    margin-right: auto;
-    width: 5em;
+    margin: auto;
 }
 
 .middlepoint{
@@ -38,8 +41,12 @@
     padding: 0.2em;
 }
 
-.dagstat{
-    font-size: 2em;
+.timestat{
+    min-width: 1.4em;
+    font-size:2.5em;
     text-align: center;
-    border: solid 1px green;
+    padding: 0;
+    margin-top: -0.4em;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
 }
