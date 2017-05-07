@@ -160,9 +160,18 @@ body {
   padding: 10px;
 }
 
-#cornertime {
-    display: inline-flex;
-    flex: auto;
+.Corntime{ 
+    display: block;
+    border: 1px solid red;
+    height: 1em;
+    p{
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        
+    }
+    position: fixed;
+    left: 1px;
+    margin-top: 0.5em;
 }
 
 /*

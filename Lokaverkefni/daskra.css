@@ -134,13 +134,16 @@ body {
   text-align: center;
   padding: 10px; }
 
-#cornertime {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto; }
+.Corntime {
+  display: block;
+  border: 1px solid red;
+  height: 1em;
+  position: fixed;
+  left: 1px;
+  margin-top: 0.5em; }
+  .Corntime p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em; }
 
 /*
 #################
