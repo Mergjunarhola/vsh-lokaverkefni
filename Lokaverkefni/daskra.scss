@@ -1,3 +1,4 @@
+$time: 20s;
 body {
     margin: 0;
     position: relative;
@@ -42,29 +43,81 @@ body {
     border-top: none;
 }
 
-sectionA {
-    width: 30%;
-}
-
-sectionB {
-    width: 70%
-}
-
 .elema {
+    margin-top: -8em;
+    position: relative;
+    left: 2em;
+    font-size: 1em;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.elema1 {
+    margin-left: 3em;
 }
 
 .elemb {
+    margin-top: 4em;
+    margin-left: -9em;
+    position: relative;
+    font-size: 1em;
+    display: inline-block;
+    img {
+        height: 150px;
+    }
+}
+
+.elemb1 {
+    margin-left: -10em;
+    img {
+        height: 125px;
+    }
 }
 
 .elemc {
+    font-size: 1em;
+    float: right;
+    margin-top: -1em;
 }
 
 .elemd {
+    font-size: 0.8em;
+    margin-left: 22em;
+    margin-top: -13em;
+    display: inline-block;
 }
 
 .center {
     text-align: center;
 }
+
+.fix {
+    margin-left: -12.5em;
+}
+
+.fix2 {
+    margin-left: -7.5em;
+}
+
+.move {
+    position: absolute;
+    left: 10%;
+    animation: move $time infinite;
+    img {
+        height: 150px;
+    }
+}
+
+.move1 {
+    position: absolute;
+    right: 10%;
+    animation: move1 $time infinite;
+    img {
+        height: 150px;
+    }
+}
+
+
 
 /*
 ##############
@@ -74,7 +127,8 @@ sectionB {
 
 .navigation {
   position: fixed;
-  width: 98%;
+  width: 100%;
+  padding-left: 0em;
   list-style: none;
   margin: 0;
   
@@ -87,7 +141,6 @@ sectionB {
   display: flex;
   
   -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
   justify-content: flex-end;
 }
 
@@ -110,4 +163,62 @@ sectionB {
 #cornertime {
     display: inline-flex;
     flex: auto;
+}
+
+/*
+#################
+    animation
+#################
+*/
+
+@keyframes move {
+    0%{
+        transform: translate(10%, 600%);
+    }10%{
+        transform: translate(10%, 10%);
+    }20%{
+        transform: translate(10%, 600%);
+    }30%{
+        transform: translate(10%, 10%);
+    }40%{
+        transform: translate(10%, 600%);
+    }50%{
+        transform: translate(10%, 10%);
+    }60%{
+        transform: translate(10%, 600%);
+    }70%{
+        transform: translate(10%, 10%);
+    }80%{
+        transform: translate(10%, 600%);
+    }90%{
+        transform: translate(10%, 10%);
+    }100%{
+        transform: translate(10%, 600%);
+    }
+}
+
+@keyframes move1 {
+    0%{
+        transform: translate(90%, 600%);
+    }10%{
+        transform: translate(90%, 10%);
+    }20%{
+        transform: translate(90%, 600%);
+    }30%{
+        transform: translate(90%, 10%);
+    }40%{
+        transform: translate(90%, 600%);
+    }50%{
+        transform: translate(90%, 10%);
+    }60%{
+        transform: translate(90%, 600%);
+    }70%{
+        transform: translate(90%, 10%);
+    }80%{
+        transform: translate(90%, 600%);
+    }90%{
+        transform: translate(90%, 10%);
+    }100%{
+        transform: translate(90%, 600%);
+    }
 }
