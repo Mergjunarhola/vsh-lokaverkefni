@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  position: relative;
+  width: 100%; }
+
+.headtext {
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  font-size: 4em; }
+
+.bott {
+  font-size: 2em;
+  display: inline;
+  margin-bottom: 2em; }
+
+.bottbox {
+  padding: 1em;
+  width: 98.1%;
+  height: 300px;
+  background-color: aqua;
+  position: absolute;
+  bottom: 0;
+  text-align: center; }
+  .bottbox .fleks {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .bottbox .fleks .bottboxtext {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+      flex-flow: row; }
+      .bottbox .fleks .bottboxtext img {
+        width: 100px;
+        height: 100px; }
+  .bottbox .bottboxtext {
+    width: 45%; }
+  .bottbox .bottboxtext2 {
+    width: 45%; }
+
+/*
+##############
+    Navbar
+##############
+*/
+.navigation {
+  position: fixed;
+  width: 98%;
+  list-style: none;
+  margin: 0;
+  background: rgba(0, 29, 255, 0.59);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  justify-content: flex-end; }
+
+.navigation a {
+  text-decoration: none;
+  border-left: rgba(255, 188, 0, 0.5) 1px solid;
+  display: block;
+  color: rgba(248, 183, 0, 0.81); }
+
+.navigation a:hover {
+  background: #c600f5; }
+
+.navigation a {
+  text-align: center;
+  padding: 10px; }
+
+.navigation li:last-of-type a {
+  border-bottom: none; }
