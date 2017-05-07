@@ -8,7 +8,7 @@ body {
 }
 
 .max {
-    max-width: 60em;
+    max-width: 50em;
     margin: 0 auto;
     padding-top: 1em;
 }
@@ -23,20 +23,47 @@ body {
 .tables {
     width: 60em;
     margin: 0 auto;
-    border-bottom: black  2em;
-}
-.tableborder {
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
-    border-left: 1px black solid;
-    border-right: 1px black solid;
-}
-.klasi{
-      border-bottom: 1px black solid;
+    border: black 2em;
 }
 
-.klasi2{
-       border-right: 1px black solid;
+.boxbox {
+    height: 15em;
+    width: 50em;
+    margin-top: -0.2em;
+}
+
+.borderbox {
+    border: solid 3px black !important;
+    display: inline-block;
+    background-color: rgba(0, 29, 255, 0.5);
+}
+
+.topbox {
+    border-top: none;
+}
+
+sectionA {
+    width: 30%;
+}
+
+sectionB {
+    width: 70%
+}
+
+.elema {
+}
+
+.elemb {
+}
+
+.elemc {
+}
+
+.elemd {
+}
+
+.center {
+    text-align: center;
 }
 
 /*
@@ -78,4 +105,9 @@ body {
 .navigation a {
   text-align: center; 
   padding: 10px;
+}
+
+#cornertime {
+    display: inline-flex;
+    flex: auto;
 }

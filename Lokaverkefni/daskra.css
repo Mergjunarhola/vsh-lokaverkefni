@@ -7,7 +7,7 @@ body {
   opacity: 0.8; }
 
 .max {
-  max-width: 60em;
+  max-width: 50em;
   margin: 0 auto;
   padding-top: 1em; }
 
@@ -21,19 +21,29 @@ body {
 .tables {
   width: 60em;
   margin: 0 auto;
-  border-bottom: black  2em; }
+  border: black 2em; }
 
-.tableborder {
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
-  border-left: 1px black solid;
-  border-right: 1px black solid; }
+.boxbox {
+  height: 15em;
+  width: 50em;
+  margin-top: -0.2em; }
 
-.klasi {
-  border-bottom: 1px black solid; }
+.borderbox {
+  border: solid 3px black !important;
+  display: inline-block;
+  background-color: rgba(0, 29, 255, 0.5); }
 
-.klasi2 {
-  border-right: 1px black solid; }
+.topbox {
+  border-top: none; }
+
+sectionA {
+  width: 30%; }
+
+sectionB {
+  width: 70%; }
+
+.center {
+  text-align: center; }
 
 /*
 ##############
@@ -69,3 +79,11 @@ body {
 .navigation a {
   text-align: center;
   padding: 10px; }
+
+#cornertime {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto; }
