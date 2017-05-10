@@ -103,6 +103,7 @@ body {
     position: absolute;
     left: 10%;
     animation: move $time infinite;
+    animation-timing-function: linear;
     img {
         height: 150px;
     }
@@ -112,6 +113,7 @@ body {
     position: absolute;
     right: 10%;
     animation: move1 $time infinite;
+    animation-timing-function: linear;
     img {
         height: 150px;
     }
@@ -162,7 +164,6 @@ body {
 
 .Corntime{ 
     display: block;
-    border: 1px solid red;
     height: 1em;
     p{
         -webkit-margin-before: 0em;
@@ -229,5 +230,14 @@ body {
         transform: translate(90%, 10%);
     }100%{
         transform: translate(90%, 600%);
+    }
+}
+
+@media screen and (max-width: 80em) {
+    .move {
+        opacity: 0;
+    }
+    .move1 {
+        opacity: 0;
     }
 }

@@ -70,7 +70,6 @@
         document.getElementById("Klukkstat").innerHTML = Hou;
         document.getElementById("Minstat").innerHTML = Min;
         document.getElementById("Sekstat").innerHTML = Sec;
-        document.getElementById("Cornertime").innerHTML = Dag+":"+Hou+":"+Min+":"+Sec;
         window.setTimeout("Countdown()",time_length);
         }
         

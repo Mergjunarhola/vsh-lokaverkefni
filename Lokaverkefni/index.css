@@ -17,11 +17,12 @@ body {
 
 .bottbox {
   padding: 1em;
-  width: 98.1%;
-  height: 35%;
+  width: 100%;
+  padding: 0;
   background-color: aqua;
+  margin-top: 24em;
+  height: auto;
   position: absolute;
-  bottom: 0;
   text-align: center; }
   .bottbox .fleks {
     display: -webkit-flex;
@@ -42,15 +43,12 @@ body {
       display: flex;
       -webkit-flex-flow: row;
       -ms-flex-flow: row;
-      flex-flow: row; }
+      flex-flow: row;
+      width: 45%; }
       .bottbox .fleks .bottboxtext img {
         padding-top: 2em;
         width: 100px;
         height: 100px; }
-  .bottbox .bottboxtext {
-    width: 45%; }
-  .bottbox .bottboxtext2 {
-    width: 45%; }
 
 /*
 ##############
@@ -72,6 +70,7 @@ body {
   -webkit-flex-flow: row wrap;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
+  justify-content: flex-end;
   justify-content: flex-end; }
 
 .navigation a {
@@ -87,22 +86,8 @@ body {
   text-align: center;
   padding: 10px; }
 
-.navigation section:last-of-type a {
+.navigation li:last-of-type a {
   border-bottom: none; }
-
-.Corntime {
-  display: block;
-  -webkit-flex-basis: 1em;
-  -ms-flex-preferred-size: 1em;
-  flex-basis: 1em;
-  border: 1px solid red;
-  height: 1em;
-  position: fixed;
-  left: 0;
-  margin-top: 0.5em; }
-  .Corntime p {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em; }
 
 /*
 #################
@@ -153,3 +138,27 @@ body {
   margin-top: -0.2em;
   padding-right: 0em;
   padding-left: 0em; }
+
+@media screen and (max-width: 60em) {
+  .fleks {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .fleks .bottboxtext {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column; }
+  .bottboxtext {
+    width: 100% !important; } }
